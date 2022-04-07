@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+    저해상도 이미지
+    중간해상도 이미지
+    고해상도 이미지
+    px -> dp
+    image는 고해상도 ~ 저해상도 까지 drawable폴더를 각각 만들어 줄 수 있다.
+    고해상도 이미지, 저해상도 이미지 따로 다 똑같이 받아서 각각의 폴더에 똑같은 이름으로
+    넣어둔다.
+    play스토어에서 다운받게 되면 각각의 핸드폰의 사양에 따라서 빌드된다.
+    저해상도 폰이라면 저해상도 이미지를 가져와서 빌드되고 고해상도 폰이라면 고해상도 이미지를
+    세팅해서 앱을 만들어 준다.
+
+    만약 저해상도, 고해상도 이미지를 받았을때는 상관이 없지만 한장의 사진만 받았을때는
+    shift 두번 누른 후 plugins에서 drawble importer를 받아서 사용하면 되지만 현재는
+    사용할 수가 없다.(나중에 누군가가 개발하게 된다면 drawble importer을 사용해서
+    해결할 수 있다는 것만 알아두자!)
+
+    현재는 android assets studio를 구글랑하게되면 페이지가 나오는데 여기서 이미지를
+    선택 후 zip파일로 받게되면 각각의 해상도에 맞춰서 이미지를 만들어 준다!
+    zip압축 풀어준 뒤 파일들을 전부 가져와서 res에 붙여넣어 주게되면 각각의 해상도에 맞는
+    파일들이 만들어진다!
+
+    * android nine patch
+     - 이미지에서 중간을 고정시켜놓고 이미지가 커지거나 줄어들게끔 자유롭게 이미지를
+     세팅할 수 있게 해주는 것이 나인패치이다.
+     단, 나인패치 이미지는 확장자명 뒤에 .9라고 되어있다.
+
+     scaleType 속성 :
+
+     라운드 모양 이미지 만들기
+     https://github.com/hdodenhof/CircleImageView을 활용해서 만든다.(라이브러리)
+-->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image1"
+        android:background="@color/purple_200"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:civ_border_width="2dp"
+        android:src="@drawable/image2"/>
+
+</LinearLayout>
