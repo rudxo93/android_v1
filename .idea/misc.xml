@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/drawable/gradinet_01.xml" value="0.293" />
+        <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/drawable/radius_01.xml" value="0.293" />
+        <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/drawable/solid_01.xml" value="0.293" />
+        <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/drawable/solid_02.xml" value="0.293" />
+        <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/drawable/stroke_01.xml" value="0.293" />
         <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/layout/activity_main.xml" value="0.25" />
         <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/layout/calcurator_layout.xml" value="0.27447916666666666" />
         <entry key="..\:/android_workspace/firstMyApp/app/src/main/res/layout/calcurator_layout_02.xml" value="0.2890625" />

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="oval">
+
+    <!-- stroke와 반대로 내부 색상을 채운다. -->
+    <solid
+        android:color="@color/purple_200"/>
+
+    <stroke
+        android:width="20dp"
+        android:color="@color/teal_700"/>
+
+    <size
+        android:width="300dp"
+        android:height="300dp"/>
+
+</shape>
