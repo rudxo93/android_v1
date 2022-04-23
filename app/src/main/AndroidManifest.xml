@@ -21,3 +21,17 @@
     </application>
 
 </manifest>
+
+<!--
+    allowBackup - 사용자가 앱을 삭제했다가 다시 설치했을때 백업된 부분들을 살려준다? true / false
+    icon - 디바이스에서의 앱 아이콘
+    label - 앱의 이름
+    roundIcon - 디바이스에서의 앱 아이콘 / icon과 roundIcon 두개를 넣어주면 알아서 디바이스의 환경에 맞춰서 아이콘이 나온다.
+    supportsRtl - 중동권 같은 경우 문자의 시작이 오른쪽에서 왼쪽이다. true를 주게되면 자동으로 맞춰주는 역할을 한다.
+    theme - res > values > themes > themes.xml 파일을 기준으로 화면 뷰 컴포넌트를 꾸며준다.
+
+    intent-filter의 속성(첫 시작화면을 의미한다.)
+
+    action / name - 앱을 실행했을때 첫번째 화면이 어떤건지 지정한다.
+    category / name - 실행시킨다.
+-->
